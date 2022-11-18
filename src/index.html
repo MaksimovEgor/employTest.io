@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Тестовое задание"
+})
+
+<body>
+	<div class="page">
+		@@include('html/header.html',{})
+		<main>
+			<section class="promo">
+				<div class="container">
+					<div class="promo__block">
+						<h1 class="promo__block-title"><span class="--blue">Lorem ipsum </span>dolor sit
+							amet&nbsp;consectetur&nbsp;<span class="--blue">&nbsp;adipiscing</span></h1>
+
+						<div class="promo__list">
+							<h6 class="promo__list-title">
+								At vero eos et accusamus et iusto odio dignissimos ducimus!
+							</h6>
+							<ul class="promo__list-list">
+								<li class="promo__list-list-item">
+									Totam rem aperiam eaque ipsa
+								</li>
+								<li class="promo__list-list-item">
+									Sit voluptatem accusantium doloremque laudantium
+								</li>
+								<li class="promo__list-list-item">
+									Sed ut perspiciatis, unde omnis iste natus error
+								</li>
+							</ul>
+						</div>
+
+
+						<div class="promo__btns">
+							<a href="#" class="btn">
+								заказать
+							</a>
+							<a href="#" class="btn btn_light">
+								подробнее
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="form">
+
+				<div class="form-container container">
+					<h2 class="form-title">
+						Оформление <span class="--blue">Заказа</span>
+					</h2>
+					<span class="form-subtitle">
+						Перед заполнением формы ознакомьтесь с нашей схемой работы!
+					</span>
+
+
+					<div class="form-icons">
+						<div class="form-icons__item">
+							<div id="item_1" class="icon-background">
+								<object type="image/svg+xml" data="@img/icons/loopa.svg" class="icon">
+								</object>
+							</div>
+
+							<p class="text">
+								Lorem ipsum dolor
+								sit amet
+							</p>
+						</div>
+
+						<div class="form-icons__item">
+							<div id="item_2" class="icon-background">
+								<object type="image/svg+xml" data="@img/icons/percent.svg" class="icon">
+								</object>
+							</div>
+							<p class="text">
+								Сonsecteturadipiscing elit
+							</p>
+						</div>
+
+						<div class="form-icons__item">
+							<div id="item_3" class="icon-background">
+								<object type="image/svg+xml" data="@img/icons/doc.svg" class="icon">
+								</object>
+							</div>
+							<p class="text">
+								Sed do eiusmod tempor
+							</p>
+						</div>
+
+						<div class="form-icons__item">
+							<div id="item_4" class="icon-background">
+								<object type="image/svg+xml" data="@img/icons/mail.svg" class="icon">
+								</object>
+							</div>
+							<p class="text">
+								Esse cillum dolore
+								eu fugiat
+							</p>
+						</div>
+					</div>
+
+					<form class="data" action="#" type="submit">
+						<div class="system">
+							<!-- 	<label for="mySelect"></label>
+							<select id="mySelect" name="mySelect">
+								<option value=>Выберите тип системы</option>
+								<option value="dark">Темная</option>
+								<option value="light">Светлая</option>
+							</select> -->
+
+
+							<label for="custom-select-input"></label>
+							<div id="custom-select-status" class="hidden-visually" aria-live="polite"></div>
+							<div class="custom-select" id="myCustomSelect">
+								<input type="text" id="custom-select-input" class="select-css"
+									aria-describedby="custom-select-info" placeholder="Выберите тип системы">
+								<!-- <span id="custom-select-info" class="hidden-visually">Arrow down for options or
+									start typing to filter.</span> -->
+								<span class="custom-select-icons">
+									<!-- <object type="image/svg+xml" data="@img/icons/arrow.svg" class="select-icon">
+									</object> -->
+									<svg class="select-icon">
+										<path
+											d="M14.9337 8.14287C14.9337 8.07144 14.898 7.99108 14.8445 7.93751L14.398 7.49108C14.3445 7.43751 14.2641 7.40179 14.1927 7.40179C14.1212 7.40179 14.0409 7.43751 13.9873 7.49108L10.4784 11L6.96946 7.49108C6.91589 7.43751 6.83553 7.40179 6.7641 7.40179C6.68375 7.40179 6.61232 7.43751 6.55875 7.49108L6.11232 7.93751C6.05875 7.99108 6.02303 8.07144 6.02303 8.14287C6.02303 8.21429 6.05875 8.29465 6.11232 8.34822L10.273 12.5089C10.3266 12.5625 10.407 12.5982 10.4784 12.5982C10.5498 12.5982 10.6302 12.5625 10.6837 12.5089L14.8445 8.34822C14.898 8.29465 14.9337 8.21429 14.9337 8.14287Z"
+											fill="black" />
+									</svg>
+
+
+
+								</span>
+								<ul class="custom-select-options hidden-all" id="custom-select-list">
+									<li><strong>Sed ut perspiciatis
+										</strong></li>
+									<li><strong>Nemo enim ipsam
+										</strong></li>
+									<li><strong>Et harum quidem</strong></li>
+									<li><strong>Temporibus autem
+										</strong></li>
+									<li><strong>Itaque earum rerum</strong></li>
+								</ul>
+							</div>
+
+
+
+
+						</div>
+						<div class="email">
+							<label for="email"></label>
+							<input type="email" name="email" placeholder="Ваш e-mail" value="" />
+						</div>
+						<div class="name">
+							<label for="name"></label>
+							<input type="text" name="name" placeholder="Ваше имя" value="" />
+						</div>
+						<div class="range">
+							<label class="range-label" for="range">
+								<span>Sed ut perspiciatis, unde omnis iste natus</span>
+								<span id="percent"></span>
+							</label>
+							<input id="range" type="range" name="range" min="0" max="100" value="90" step="1">
+
+						</div>
+
+						<div class="upload">
+							<label class="label-file" for="file">
+								<object type="image/svg+xml" data="@img/icons/doc2.svg" class="file-icon">
+								</object>
+								Прикрепить файл</label>
+							<input class="input-file" type="file" name="file" id="file" />
+						</div>
+
+						<button class="btn submit" type="submit">Отправить</button>
+
+					</form>
+
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/leader-line-new@1.1.9/leader-line.min.js"></script>
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
